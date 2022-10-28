@@ -15,19 +15,21 @@
 
 int	main(int argc, char **argv)
 {
-	long long unsigned int	a;
+	size_t			a;
+	unsigned int	b;
 
+	system("cls");
 	if (argc != 4)
 		return (0);
 	a = atoi(argv[3]);
-	printf("Before using the function\n");
+	printf("> Before using the function:\n");
 	printf("src: %s\n", argv[2]);
 	printf("dst: %s\n", argv[1]);
 	printf("dstsize: %s\n", argv[3]);
-	ft_strlcat(argv[1], (const char *)argv[2], a);
-	printf("After using the function\n");
+	b = ft_strlcat(argv[1], (const char *)argv[2], a);
+	printf("> After using the function:\n");
 	printf("src: %s\n", argv[2]);
 	printf("dst: %s\n", argv[1]);
-	printf("dstsize: %d\n", ft_strlcat(argv[1], (const char *)argv[2], a));
+	printf("returned: %d\n", b);
 	return (0);
 }

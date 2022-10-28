@@ -18,6 +18,7 @@ int	main(int argc, char **argv)
 	long long unsigned int	a;
 	int						b;
 
+	system("cls");
 	if (argc != 4)
 		return (0);
 	a = atoi(argv[3]);
