@@ -5,7 +5,6 @@ int main(void)
 {
 	char	c[10000];
 
-	system("cls");
 	printf("Write your sentence: ");
 	fgets(c, sizeof(c), stdin);
 	printf("ft_strlen: %llu characters.\n", ft_strlen(c));

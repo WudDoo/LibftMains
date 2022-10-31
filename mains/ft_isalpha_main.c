@@ -5,16 +5,14 @@ int main	(void)
 {
 	int		a;
 
-	system("cls");
-	printf("Enter a character: ");
+	printf("Enter a decimal number:\n");
 	scanf("%d", &a);
 	if (ft_isalpha(a))
 	{
-		printf ("%d is an alphabet: ", a);
-		write (1, &a, sizeof(a));
+		printf ("That is an alphabet in the ASCII table.");
 		return (0);
 	}
 	else
-		printf ("%d is NOT an alphabet", a);
+		printf ("That is NOT an alphabet in the ASCII table.");
 	return (0);
 }

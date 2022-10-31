@@ -6,7 +6,6 @@ int main(void)
 	char *dest;
 	char src[10000];
 
-	system("cls");
 	printf("Write the string you want to duplicate: ");
 	fgets(src, sizeof(src), stdin);
 	dest = ft_strdup(src);
