@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include"libft.h"
 
-int main	(void)
+int main(void)
 {
-	int		a;
+	int	a;
 
 	printf("Enter a decimal number:\n");
 	scanf("%d", &a);

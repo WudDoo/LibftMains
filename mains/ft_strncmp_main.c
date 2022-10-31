@@ -4,17 +4,15 @@
 int main(int argc, char **argv)
 {
 	int a;
-	int i;
 
 	if (argc != 4)
 		return (0);
 	a = atoi(argv[3]);
-	i = ft_strncmp(argv[1], argv[2], a);
-	if (i == 0)
-		printf("str1 and str2 are equal");
-	else if (i < 0)
-		printf("str1 is less than str2");
+	if ((ft_strncmp(argv[1], argv[2], a)) == 0)
+		printf("Both strings are equal.\n");
+	else if ((ft_strncmp(argv[1], argv[2], a)) < 0)
+		printf("The 2nd string is greater.\n");
 	else
-		printf("str1 is more than str2");
+		printf("The 1st string is greater.\n");
 	return(0);
 }
